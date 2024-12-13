@@ -1,4 +1,4 @@
-package miage.TD1.TD1;
+package miage.TD1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
