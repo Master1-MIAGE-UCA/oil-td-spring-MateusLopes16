@@ -8,8 +8,10 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
 
 @Entity
+@Getter
 public class DiceRollLog {
 
     @Id
@@ -30,21 +32,5 @@ public class DiceRollLog {
         this.diceCount = diceCount;
         this.results = results;
         this.timestamp = timestamp;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public int getDiceCount() {
-        return diceCount;
-    }
-
-    public List<Integer> getResults() {
-        return results;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
     }
 }

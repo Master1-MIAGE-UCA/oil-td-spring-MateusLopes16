@@ -14,6 +14,8 @@ public class DiceLogController {
 
     @GetMapping("/diceLogs")
     public List<DiceRollLog> getDiceLogs() {
-        return diceRollLogRepository.findAll();
+        List<DiceRollLog> logs = diceRollLogRepository.findAll();
+        System.out.println("Retrieved DiceRollLogs: " + logs);
+        return logs;
     }
 }

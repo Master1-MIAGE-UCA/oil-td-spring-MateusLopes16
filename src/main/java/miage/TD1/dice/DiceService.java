@@ -28,5 +28,6 @@ public class DiceService {
     private void saveDiceRollLog(int diceCount, List<Integer> results) {
         DiceRollLog log = new DiceRollLog(diceCount, results, LocalDateTime.now());
         diceRollLogRepository.save(log);
+        System.out.println("Saved DiceRollLog: " + log);
     }
 }
